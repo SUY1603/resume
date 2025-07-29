@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyash Jadhav - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .resume-container {
+            max-width: 8.5in;
+            min-height: 11in;
+            margin: auto;
+        }
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .resume-container {
+                margin: 0;
+                box-shadow: none;
+                border: none;
+                transform: scale(1.0); 
+                transform-origin: top left;
+                page-break-after: always;
+            }
+        }
+        .section-title {
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #111827;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-8">
+
+    <!-- Resume Content -->
+    <div class="resume-container bg-white p-8 sm:p-12 shadow-lg rounded-lg">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">Suyash Jadhav</h1>
+            <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 text-md mt-3">
+                <span class="contact-item"><i class="fas fa-map-marker-alt"></i> Ranchi, Jharkhand</span>
+                <span class="contact-item"><i class="fas fa-phone"></i> 9359547416</span>
+                <a href="mailto:sjguddu1603@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> sjguddu1603@gmail.com</a>
+                <a href="https://www.linkedin.com/" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </header>
+
+        <section class="mb-6">
+            <h2 class="section-title">Summary</h2>
+            <p class="text-gray-700 leading-relaxed">
+                A pre-final year Computer Science student at Birla Institute of Technology, Mesra, with a deep curiosity for machine learning and AI. I am currently learning to build deep learning models using PyTorch and am excited to apply these skills to practical problems and contribute to new projects.
+            </p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="section-title">Education</h2>
+            <div>
+                <div class="flex justify-between items-baseline">
+                    <h3 class="font-bold text-gray-800">Birla Institute of Technology, Mesra</h3>
+                    <span class="text-sm font-medium text-gray-600">Expected Graduation: May 2027</span>
+                </div>
+                <p class="italic text-gray-600">Bachelor of Technology in Computer Science | CGPA: 8.27/10.00</p>
+                <p class="mt-2 text-gray-700"><span class="font-semibold">Relevant Coursework:</span> Data Structures and Algorithms, Database Management Systems, Operating Systems, Object-Oriented Programming.</p>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-700">
+                <li><span class="font-semibold">Programming Languages:</span> Python, C++, JavaScript</li>
+                <li><span class="font-semibold">Frameworks & Libraries:</span> PyTorch, NumPy, Pandas, Matplotlib</li>
+                <li><span class="font-semibold">Databases:</span> SQL</li>
+                <li><span class="font-semibold">Tools & Platforms:</span> GitHub, Google Cloud (Vertex AI), Gradio, Hugging Face Spaces</li>
+                <li><span class="font-semibold">Machine Learning:</span> Model Development in PyTorch, Neural Network Architectures, Data Preprocessing & Analysis for ML</li>
+            </ul>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="section-title">Projects</h2>
+            <div>
+                <h3 class="font-bold text-gray-800">Car Price Estimator | <a href="https://sushay-car-price-estimator.hf.space/" target="_blank">Live Demo</a></h3>
+                <ul class="list-disc list-inside mt-1 text-gray-700 space-y-1">
+                    <li>Developed and trained a linear regression model using PyTorch to predict used car prices based on their age and mileage.</li>
+                    <li>Created an interactive user interface with sliders for input using the Gradio library.</li>
+                    <li>Successfully deployed the complete application as a public web app using Hugging Face Spaces for demonstration.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li><span class="font-semibold">JEE Main 2023:</span> Secured a rank in the top 3.5% among over 900,000 candidates.</li>
+                <li><span class="font-semibold">Informatics Practices:</span> Achieved a score of 92/100 in the final board examination.</li>
+                <li><a href="https://drive.google.com/file/d/1NuC9YAVmJ5y-5DxKrIr7RQz-P4W5Szy3/view?usp=drive_link" target="_blank" class="font-semibold">Gen AI Study Jam:</a> Completed workshops on Prompt Design in Vertex AI, developing Gen AI Apps with Gemini & Streamlit, and the Gen AI Arcade Game.</li>
+                <li><span class="font-semibold">Google Cloud Arcade:</span> Actively participated in the Google Cloud Arcade Facilitator Program.</li>
+                <li><span class="font-semibold">Certifications:</span>
+                    <ul class="list-disc list-inside ml-6 mt-1">
+                        <li><a href="https://drive.google.com/file/d/1kbu_XXlWLUaLjToNnH94rfnwOob22Wil/view?usp=drive_link" target="_blank">Deep Learning Fundamentals</a> (IBM Cognitive Class)</li>
+                        <li><a href="https://drive.google.com/file/d/1JWAaogSt2gaM_NHq2TsarHng-jlrr9jL/view?usp=drive_link" target="_blank">Data Analysis with Python</a> (IBM Cognitive Class)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Positions of Responsibility</h2>
+            <div>
+                <h3 class="font-bold text-gray-800">Leo Club, BIT Mesra</h3>
+                <ul class="list-disc list-inside mt-1 text-gray-700">
+                    <li>Resource Head</li>
+                    <li>Web Team Member</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
